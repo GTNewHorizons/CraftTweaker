@@ -1,5 +1,6 @@
 package minetweaker.mods.ic2.crops;
 
+import minetweaker.annotations.ModOnly;
 import minetweaker.api.item.IItemStack;
 import stanhebben.zenscript.annotations.ZenClass;
 import stanhebben.zenscript.annotations.ZenGetter;
@@ -7,11 +8,12 @@ import stanhebben.zenscript.annotations.ZenSetter;
 
 /**
  * Contains all of the growth requirements for an IC2 crop in one easy place
- * 
+ *
  * @author ben
  *
  */
 @ZenClass("mods.ic2.GrowthRequirements")
+@ModOnly("IC2")
 public class GrowthRequirements {
 
     private int minNutrients;
@@ -25,7 +27,7 @@ public class GrowthRequirements {
 
     /**
      * Get the minimum amount of nutrients this plant needs to grow
-     * 
+     *
      * @return The minimum amount of nutrients this plant needs
      */
     @ZenGetter("minNutrients")
@@ -35,7 +37,7 @@ public class GrowthRequirements {
 
     /**
      * Set the minimum amount of nutrients this plant needs to grow
-     * 
+     *
      * @param minNutrients The new minimum amount of nutrients this plant requires
      */
     @ZenSetter("minNutrients")
@@ -45,7 +47,7 @@ public class GrowthRequirements {
 
     /**
      * Get the minimum amount of humidity this plant requires
-     * 
+     *
      * @return The minimum amount of humidity this plant requires
      */
     @ZenGetter("minHumidity")
@@ -55,7 +57,7 @@ public class GrowthRequirements {
 
     /**
      * Set the minimum amount of humidity this plant requires
-     * 
+     *
      * @param minHumidity The new minimum amount of humidity this plant requires
      */
     @ZenSetter("minHumidity")
@@ -65,7 +67,7 @@ public class GrowthRequirements {
 
     /**
      * Get the minimum air quality this plant requires
-     * 
+     *
      * @return The minimum air quality this plant requires
      */
     @ZenGetter("minAirQuality")
@@ -75,7 +77,7 @@ public class GrowthRequirements {
 
     /**
      * Set the minimum air quality this plant requires
-     * 
+     *
      * @param minAirQuality The new amount of air quality this plant requires
      */
     @ZenSetter("minAirQuality")
@@ -85,7 +87,7 @@ public class GrowthRequirements {
 
     /**
      * Get the minimum amount of light this plant requires
-     * 
+     *
      * @return The minimum amount of light this plant requires
      */
     @ZenGetter("minLight")
@@ -95,7 +97,7 @@ public class GrowthRequirements {
 
     /**
      * Set the minimum amount of light this plant requires
-     * 
+     *
      * @param minLight The new minimum amount of light this plant requires
      */
     @ZenSetter("minLight")
@@ -105,7 +107,7 @@ public class GrowthRequirements {
 
     /**
      * Get the maximum amount of light this plant can have
-     * 
+     *
      * @return The maximum amount of light this plant can have
      */
     @ZenGetter("maxLight")
@@ -115,7 +117,7 @@ public class GrowthRequirements {
 
     /**
      * Set the maximum amount of light this plant can have
-     * 
+     *
      * @param maxLight The new maximum amount of light thi plant can have
      */
     @ZenSetter("maxLight")
@@ -125,7 +127,7 @@ public class GrowthRequirements {
 
     /**
      * Get the block that is required to be below this one
-     * 
+     *
      * @return The block required to be below this one
      */
     @ZenGetter("requiredBlock")
@@ -135,7 +137,7 @@ public class GrowthRequirements {
 
     /**
      * Set the block required to be below this one
-     * 
+     *
      * @param requiredBlock The new block required to be below this one
      */
     @ZenSetter("requiredBlock")

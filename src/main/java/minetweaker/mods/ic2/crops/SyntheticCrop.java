@@ -9,6 +9,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 import ic2.api.crops.CropCard;
 import ic2.api.crops.ICropTile;
 import minetweaker.MineTweakerAPI;
+import minetweaker.annotations.ModOnly;
 import minetweaker.api.item.IItemStack;
 import minetweaker.api.minecraft.MineTweakerMC;
 import stanhebben.zenscript.annotations.ZenClass;
@@ -18,17 +19,18 @@ import stanhebben.zenscript.annotations.ZenSetter;
 
 /**
  * A synthetic crop, created in ZS
- * 
+ *
  * For your crop textures to be picked up, put them at owner + ":crops/crop" + name + "." + size where owner is the mod
  * responsible for the crop name is the name of the crop size is the current size of the crop, starting at 0 for new
  * crops
- * 
+ *
  * Localizations will be looked for at owner + ".crop." + name where each field has the value it has above
- * 
+ *
  * @author ben
  *
  */
 @ZenClass("mods.ic2.SyntheticCrop")
+@ModOnly("IC2")
 public class SyntheticCrop extends CropCard {
 
     private String name;
@@ -48,7 +50,7 @@ public class SyntheticCrop extends CropCard {
 
     /**
      * Create a new synthetic crop
-     * 
+     *
      * @param cropName  The name of this crop
      * @param cropOwner The mod creating this crop
      */
@@ -94,7 +96,7 @@ public class SyntheticCrop extends CropCard {
 
     /**
      * Gets the value of a particular stat for this crop
-     * 
+     *
      * Stats: - 0: Chemistry (Industrial uses based on chemical plant components) - 1: Consumable (Food, potion
      * ingredients, stuff meant to be eaten or similarly used) - 2: Defensive (Plants with defense capabilities
      * (damaging, explosive, chemical) or special abilities in general) - 3: Colorful (How
@@ -186,7 +188,7 @@ public class SyntheticCrop extends CropCard {
 
     /**
      * Sets the tier of this crop
-     * 
+     *
      * @param tier The new tier of this crop
      */
     @ZenSetter("tier")
@@ -196,7 +198,7 @@ public class SyntheticCrop extends CropCard {
 
     /**
      * Sets all of the stats for this crop
-     * 
+     *
      * @param stats The new stats to give to this crop
      */
     @ZenSetter("stats")
@@ -206,7 +208,7 @@ public class SyntheticCrop extends CropCard {
 
     /**
      * Sets an individual stat for this crop
-     * 
+     *
      * @param stat The stat to set a value for
      * @param val  The new value for this stat
      */
@@ -221,7 +223,7 @@ public class SyntheticCrop extends CropCard {
 
     /**
      * Sets the additional attributes for this crop
-     * 
+     *
      * @param attributes Sets the attributes of this crop
      */
     @ZenSetter("attributes")
@@ -231,7 +233,7 @@ public class SyntheticCrop extends CropCard {
 
     /**
      * Sets the maximum size this crop goes to
-     * 
+     *
      * @param maxSize The new max size of this crop
      */
     @ZenSetter("maxSize")
@@ -241,7 +243,7 @@ public class SyntheticCrop extends CropCard {
 
     /**
      * Sets the item this crop gives when harvested
-     * 
+     *
      * @param fruit The item to give from the crop
      */
     @ZenSetter("fruit")
@@ -251,7 +253,7 @@ public class SyntheticCrop extends CropCard {
 
     /**
      * Sets the chance for this plant to yield its fruit
-     * 
+     *
      * @param dropChance The new chance for this plant to yield fruit
      */
     @ZenSetter("dropChance")
@@ -261,7 +263,7 @@ public class SyntheticCrop extends CropCard {
 
     /**
      * Get the current requirements for this plant to grow
-     * 
+     *
      * @return The current growth requirements for this plant
      */
     public GrowthRequirements getReqs() {
@@ -270,7 +272,7 @@ public class SyntheticCrop extends CropCard {
 
     /**
      * Set the current growth requirements for this plant to grow
-     * 
+     *
      * @param reqs The new requirements for this plant to grow
      */
     public void setReqs(GrowthRequirements reqs) {
