@@ -141,6 +141,11 @@ public class MCServer extends AbstractServer {
         public boolean isUsernameIndex(String[] var1, int var2) {
             return false;
         }
+
+        @Override
+        public int compareTo(Object o) {
+            return this.getCommandName().compareTo(((ICommand) o).getCommandName());
+        }
     }
 
     private class AddCommandAction implements IUndoableAction {
