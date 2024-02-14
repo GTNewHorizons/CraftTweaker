@@ -141,11 +141,6 @@ public class MCServer extends AbstractServer {
         public boolean isUsernameIndex(String[] var1, int var2) {
             return false;
         }
-
-        @Override
-        public int compareTo(Object o) {
-            return 0;
-        }
     }
 
     private class AddCommandAction implements IUndoableAction {
