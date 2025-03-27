@@ -26,8 +26,8 @@ import stanhebben.zenscript.compiler.IEnvironmentGlobal;
 import stanhebben.zenscript.parser.ParseException;
 
 /**
- * 
- * 
+ *
+ *
  * @author Stan Hebben
  */
 public class MTTweaker implements ITweaker {
@@ -172,7 +172,6 @@ public class MTTweaker implements ITweaker {
         }
 
         if (wereStuck.size() > 0) {
-            MineTweakerAPI.logWarning(Integer.toString(wereStuck.size()) + " modifications were stuck");
             for (IUndoableAction action : wereStuck) {
                 MineTweakerAPI.logInfo("Stuck: " + action.describe());
             }
