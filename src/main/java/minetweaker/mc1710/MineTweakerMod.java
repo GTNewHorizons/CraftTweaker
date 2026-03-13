@@ -98,7 +98,8 @@ public class MineTweakerMod {
                 new MCFormatter(),
                 new MCVanilla());
 
-        MineTweakerImplementationAPI.logger.addLogger(new FileLogger(new File("logs/minetweaker.log")));
+        MineTweakerImplementationAPI.logger
+                .addLogger(new FileLogger(new File("logs" + File.pathSeparator + "minetweaker.log")));
         MineTweakerImplementationAPI.platform = MCPlatformFunctions.INSTANCE;
 
         File globalDir = new File("scripts");
