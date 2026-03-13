@@ -109,7 +109,7 @@ public class MineTweakerImplementationAPI {
                                 }
 
                                 if (player != null) {
-                                    player.sendChat("List generated; see minetweaker.log in your minecraft dir");
+                                    player.sendChat("List generated; see minetweaker.log in your logs dir");
                                 }
                             }
                         }));
@@ -134,7 +134,7 @@ public class MineTweakerImplementationAPI {
                                 }
 
                                 if (player != null) {
-                                    player.sendChat("List generated; see minetweaker.log in your minecraft dir");
+                                    player.sendChat("List generated; see minetweaker.log in your logs dir");
                                 }
                             }
                         }));
@@ -159,7 +159,7 @@ public class MineTweakerImplementationAPI {
                                 }
 
                                 if (player != null) {
-                                    player.sendChat("List generated; see minetweaker.log in your minecraft dir");
+                                    player.sendChat("List generated; see minetweaker.log in your logs dir");
                                 }
                             }
                         }));
@@ -183,7 +183,7 @@ public class MineTweakerImplementationAPI {
                                 }
 
                                 if (player != null) {
-                                    player.sendChat("List generated; see minetweaker.log in your minecraft dir");
+                                    player.sendChat("List generated; see minetweaker.log in your logs dir");
                                 }
                             }
                         }));
@@ -226,8 +226,7 @@ public class MineTweakerImplementationAPI {
                                     }
 
                                     if (player != null) {
-                                        player.sendChat(
-                                                "Recipe list generated; see minetweaker.log in your minecraft dir");
+                                        player.sendChat("Recipe list generated; see minetweaker.log in your logs dir");
                                     }
                                 } else if (arguments[0].equals("hand") && player != null) {
                                     IItemStack item = player.getCurrentItem();
@@ -266,7 +265,7 @@ public class MineTweakerImplementationAPI {
 
                                     if (player != null) {
                                         player.sendChat(
-                                                "Furnace Recipe list generated; see minetweaker.log in your minecraft dir");
+                                                "Furnace Recipe list generated; see minetweaker.log in your logs dir");
                                     }
                                 } else {
                                     if (player != null) {
@@ -353,7 +352,7 @@ public class MineTweakerImplementationAPI {
                                         }
                                     }
                                 }
-                                player.sendChat("List generated; see minetweaker.log in your minecraft dir");
+                                player.sendChat("List generated; see minetweaker.log in your logs dir");
                             }
                         }));
 
@@ -446,7 +445,7 @@ public class MineTweakerImplementationAPI {
                                         }
                                     }
 
-                                    player.sendChat("List generated; see minetweaker.log in your minecraft dir");
+                                    player.sendChat("List generated; see minetweaker.log in your logs dir");
                                 } else {
                                     MineTweakerAPI.logCommand("Loot for type: " + arguments[0]);
 
@@ -455,7 +454,7 @@ public class MineTweakerImplementationAPI {
                                         MineTweakerAPI.logCommand("    " + entry.toString());
                                     }
 
-                                    player.sendChat("List generated; see minetweaker.log in your minecraft dir");
+                                    player.sendChat("List generated; see minetweaker.log in your logs dir");
                                 }
                             }
                         }));
@@ -514,7 +513,7 @@ public class MineTweakerImplementationAPI {
                                     MineTweakerAPI.logCommand("    " + biome.getName());
                                 }
 
-                                player.sendChat("Biome list generated; see minetweaker.log in your minecraft dir");
+                                player.sendChat("Biome list generated; see minetweaker.log in your logs dir");
                             }
                         }));
 
