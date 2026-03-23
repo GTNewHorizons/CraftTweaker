@@ -38,6 +38,10 @@ public class MTLogger implements ILogger {
         unprocessed.clear();
     }
 
+    public void clearPlayers() {
+        players.clear();
+    }
+
     @Override
     public void logCommand(String message) {
         for (ILogger logger : loggers) {
