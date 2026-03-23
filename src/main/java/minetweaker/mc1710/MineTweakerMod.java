@@ -192,5 +192,6 @@ public class MineTweakerMod {
     public void onServerStopped(FMLServerStoppedEvent ev) {
         MineTweakerImplementationAPI.onServerStop();
         MineTweakerImplementationAPI.setScriptProvider(scriptsGlobal);
+        MineTweakerImplementationAPI.logger.clearPlayers();
     }
 }
