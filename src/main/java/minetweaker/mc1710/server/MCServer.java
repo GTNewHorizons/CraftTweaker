@@ -80,7 +80,7 @@ public class MCServer extends AbstractServer {
         }
     }
 
-    private class MCCommand implements ICommand {
+    private static class MCCommand implements ICommand {
 
         private final String name;
         private final String usage;
@@ -148,7 +148,7 @@ public class MCServer extends AbstractServer {
         }
     }
 
-    private class AddCommandAction implements IUndoableAction {
+    private static class AddCommandAction implements IUndoableAction {
 
         private final ICommand command;
 
